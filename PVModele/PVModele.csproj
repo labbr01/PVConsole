@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1760DBD2-A921-4697-B781-65A72058C407}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PVModele</RootNamespace>
+    <AssemblyName>PVModele</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComparateurCompetiteur.cs" />
+    <Compile Include="Tables\CateCompil.cs" />
+    <Compile Include="Tables\Categorie.cs" />
+    <Compile Include="Tables\Action.cs" />
+    <Compile Include="Tables\Blocs.cs" />
+    <Compile Include="Tables\Club.cs" />
+    <Compile Include="Tables\Commentaire.cs" />
+    <Compile Include="Tables\Competition.cs" />
+    <Compile Include="Tables\CompilationTemps.cs" />
+    <Compile Include="Tables\CompiltationPoints.cs" />
+    <Compile Include="Tables\CompiltationTempsTempo.cs" />
+    <Compile Include="DBPatinVitesse.cs" />
+    <Compile Include="Tables\DistanceCompe.cs" />
+    <Compile Include="Tables\DistancesCompilation.cs" />
+    <Compile Include="Tables\DistancesStandards.cs" />
+    <Compile Include="Tables\Division.cs" />
+    <Compile Include="Tables\DivisionCompe.cs" />
+    <Compile Include="Tables\EpreuvesFormatOuvert.cs" />
+    <Compile Include="Tables\EpreuvesCompilation.cs" />
+    <Compile Include="Tables\Erreurs.cs" />
+    <Compile Include="Tables\FormatCompe.cs" />
+    <Compile Include="Tables\GroupesCompe.cs" />
+    <Compile Include="Tables\LdCd.cs" />
+    <Compile Include="Tables\ListePoints.cs" />
+    <Compile Include="Tables\LpCp.cs" />
+    <Compile Include="Tables\NombPatFormat2.cs" />
+    <Compile Include="Tables\NombPatFormat3.cs" />
+    <Compile Include="Tables\Parametres.cs" />
+    <Compile Include="Tables\Patineur.cs" />
+    <Compile Include="Tables\PatineurCompe.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tables\PatVagues.cs" />
+    <Compile Include="Tables\PatVaguesFormatOuvert.cs" />
+    <Compile Include="Tables\PointageEssaisC.cs" />
+    <Compile Include="Tables\PointageEssaisCISU.cs" />
+    <Compile Include="Tables\Points.cs" />
+    <Compile Include="Tables\PointsCumulFormatOuvert.cs" />
+    <Compile Include="Tables\ProgCoursesFormatOuvert.cs" />
+    <Compile Include="Tables\ProgCourses.cs" />
+    <Compile Include="Tables\ProgCourses1.cs" />
+    <Compile Include="Tables\Regions.cs" />
+    <Compile Include="Tables\Secteurs.cs" />
+    <Compile Include="Tables\SeqCoursesFormatOuvert.cs" />
+    <Compile Include="Tables\Sexe.cs" />
+    <Compile Include="Tables\SommeDePoints.cs" />
+    <Compile Include="Tables\Vague1.cs" />
+    <Compile Include="Tables\Vagues.cs" />
+    <Compile Include="Tables\VaguesFormatOuvert.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XMLFile1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XSLTFile1.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\linq2db-master\Source\LinqToDB.csproj">
+      <Project>{7CBD2975-3D0C-4BC3-BB4E-932F910778CF}</Project>
+      <Name>LinqToDB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

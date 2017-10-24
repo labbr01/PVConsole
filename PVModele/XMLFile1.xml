@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='XSLTFile1.xslt'?>
+<Golfers>
+  <Golfer ID="1" Name="Bobby Jones" Birthday="1902-03-17" />
+  <Golfer ID="2" Name="Sam Snead" Birthday="1912-05-27" />
+  <Golfer ID="3" Name="Tiger Woods" Birthday="1975-12-30" />
+</Golfers>
